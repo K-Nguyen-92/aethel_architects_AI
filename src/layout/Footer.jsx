@@ -10,7 +10,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#0a0a0a] text-white pt-24 pb-12 px-4 md:px-16 font-sans border-t border-gray-900">
+    <footer className="bg-bg-dark text-white pt-24 pb-12 px-4 md:px-16 font-sans border-t border-gray-900">
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-24">
@@ -24,7 +24,7 @@ const Footer = () => {
                     AETHEL
                   </h1>
                   <Compass
-                    className="w-5 h-5 text-[#b35a39] mt-1"
+                    className="w-5 h-5 text-primary mt-1"
                     strokeWidth={1.5}
                   />
                 </div>
@@ -51,12 +51,12 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter your email address"
-                  className="w-full bg-transparent border-b border-gray-800 py-3 text-sm font-light text-white placeholder-gray-600 focus:outline-none focus:border-[#b35a39] transition-colors pr-10"
+                  className="w-full bg-transparent border-b border-gray-800 py-3 text-sm font-light text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-colors pr-10"
                   required
                 />
                 <button
                   type="submit"
-                  className="absolute right-0 bottom-3 text-gray-500 group-hover:text-[#b35a39] transition-colors"
+                  className="absolute right-0 bottom-3 text-gray-500 group-hover:text-primary transition-colors"
                   aria-label="Subscribe"
                 >
                   <ArrowRight className="w-5 h-5" />
@@ -67,7 +67,7 @@ const Footer = () => {
 
           {/* Navigation Column */}
           <div className="lg:col-span-2 lg:col-start-7">
-            <h4 className="text-xs tracking-[0.2em] text-[#b35a39] uppercase mb-8 font-semibold">
+            <h4 className="text-xs tracking-[0.2em] text-primary uppercase mb-8 font-semibold">
               Navigation
             </h4>
             <ul className="space-y-4">
@@ -103,20 +103,12 @@ const Footer = () => {
                   Contact
                 </a>
               </li>
-              <li>
-                <a
-                  href="#journal"
-                  className="text-gray-400 hover:text-white text-sm font-light transition-colors"
-                >
-                  Journal
-                </a>
-              </li>
             </ul>
           </div>
 
           {/* Legal & About Column */}
           <div className="lg:col-span-2">
-            <h4 className="text-xs tracking-[0.2em] text-[#b35a39] uppercase mb-8 font-semibold">
+            <h4 className="text-xs tracking-[0.2em] text-primary uppercase mb-8 font-semibold">
               Firm
             </h4>
             <ul className="space-y-4">
@@ -157,7 +149,7 @@ const Footer = () => {
 
           {/* Global Offices Column */}
           <div className="lg:col-span-2">
-            <h4 className="text-xs tracking-[0.2em] text-[#b35a39] uppercase mb-8 font-semibold">
+            <h4 className="text-xs tracking-[0.2em] text-primary uppercase mb-8 font-semibold">
               Studios
             </h4>
             <ul className="space-y-6">

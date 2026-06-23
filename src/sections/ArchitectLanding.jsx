@@ -12,12 +12,12 @@ const ArchitectLanding = () => {
       }}
     >
       {/* Dark gradient overlay to ensure text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40"></div>
+      <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/20 to-black/40"></div>
       {/* Header / Navigation */}
       <Navbar />
 
       {/* Hero Content */}
-      <main className="relative z-10 flex-grow flex flex-col items-center justify-center text-center px-4 pb-20">
+      <main className="relative z-10 grow flex flex-col items-center justify-center text-center px-4 pb-20">
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 drop-shadow-xl tracking-tight">
           BUILD YOUR LEGACY IN SPACE
         </h2>
@@ -26,7 +26,7 @@ const ArchitectLanding = () => {
           Bespoke, sustainable architectural design for generations.
         </p>
 
-        <button className="bg-[#b35a39] hover:bg-[#9a4d31] text-white px-10 py-4 text-sm font-semibold tracking-wider uppercase transition-colors duration-300 shadow-lg cursor-pointer">
+        <button className="btn-primary text-white px-10 py-4 text-sm font-semibold tracking-wider uppercase transition-colors duration-300 shadow-lg cursor-pointer">
           Request a Consultation
         </button>
       </main>

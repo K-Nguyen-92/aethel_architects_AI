@@ -69,7 +69,7 @@ const ProjectModal = ({
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-50 p-2 bg-black/60 hover:bg-[#b35a39] text-white rounded-full transition-colors duration-300 cursor-pointer border border-white/10"
+          className="absolute top-4 right-4 z-50 p-2 bg-black/60 hover:bg-primary text-white rounded-full transition-colors duration-300 cursor-pointer border border-white/10"
           aria-label="Close modal"
         >
           <X className="w-5 h-5" />
@@ -78,7 +78,7 @@ const ProjectModal = ({
         {/* Modal Body */}
         <div className="flex flex-col lg:flex-row h-full overflow-y-auto lg:overflow-hidden">
           {/* Left Column: Image with INNER Nav Arrows (Now for project images) */}
-          <div className="w-full lg:w-3/5 h-[40vh] lg:h-[70vh] relative bg-black flex-shrink-0">
+          <div className="w-full lg:w-3/5 h-[40vh] lg:h-[70vh] relative bg-black shrink-0">
             <img
               src={projectImages[currentImageIndex]}
               alt={project.title}
@@ -109,7 +109,7 @@ const ProjectModal = ({
           {/* Right Column: Detailed Project Information */}
           <div className="w-full lg:w-2/5 p-8 md:p-10 flex flex-col justify-between overflow-y-auto bg-[#121212]">
             <div>
-              <div className="flex items-center gap-2 text-[#b35a39] text-xs font-semibold tracking-widest uppercase mb-4">
+              <div className="flex items-center gap-2 text-primary text-xs font-semibold tracking-widest uppercase mb-4">
                 <MapPin className="w-4 h-4" strokeWidth={2} />
                 <span>{project.location}</span>
               </div>
@@ -164,15 +164,6 @@ const ProjectModal = ({
                   </button>
                 </div>
               </div>
-
-              {/* <button
-                onClick={() =>
-                  alert("Redirecting to comprehensive case study...")
-                }
-                className="text-xs font-medium uppercase tracking-widest text-white hover:text-[#b35a39] transition-colors duration-200"
-              >
-                Full Case Study →
-              </button> */}
             </div>
           </div>
         </div>

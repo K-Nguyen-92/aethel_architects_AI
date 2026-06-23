@@ -45,13 +45,13 @@ const PhilosophyCarousel = () => {
   return (
     <section
       id="philosophy"
-      className="bg-[#F9F8F6] text-[#1a1a1a] py-24 md:py-32 px-4 md:px-16 font-sans overflow-hidden"
+      className="bg-[#F9F8F6] text-text-dark py-24 md:py-32 px-4 md:px-16 font-sans overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-16">
-          <div className="w-12 h-[1px] bg-[#b35a39]"></div>
-          <h3 className="text-sm tracking-[0.3em] text-[#b35a39] font-semibold uppercase">
+          <div className="w-12 h-px bg-primary"></div>
+          <h3 className="text-sm tracking-[0.3em] text-primary font-semibold uppercase">
             Our Philosophy
           </h3>
         </div>
@@ -59,7 +59,7 @@ const PhilosophyCarousel = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
           {/* Left: Image Carousel Area */}
           <div className="w-full lg:w-1/2 relative">
-            <div className="relative h-[500px] md:h-[650px] w-full overflow-hidden">
+            <div className="relative h-125 md:h-162.5 w-full overflow-hidden">
               {team.map((member, index) => (
                 <div
                   key={member.id}
@@ -77,7 +77,7 @@ const PhilosophyCarousel = () => {
                   />
 
                   {/* Floating Name Badge */}
-                  <div className="absolute bottom-0 right-6 md:-right-1 z-20 bg-white p-6 shadow-xl min-w-[240px] opacity-75">
+                  <div className="absolute bottom-0 right-6 md:-right-1 z-20 bg-white p-6 shadow-xl min-w-60 opacity-75">
                     <p className="text-xs tracking-[0.2em] text-gray-500 uppercase mb-1">
                       {member.role}
                     </p>
@@ -93,13 +93,13 @@ const PhilosophyCarousel = () => {
             <div className="flex gap-4 mt-12 lg:mt-8">
               <button
                 onClick={prevMember}
-                className="p-3 border border-gray-300 rounded-full hover:bg-[#1a1a1a] hover:text-white transition-all duration-300"
+                className="p-3 border border-gray-300 rounded-full hover:bg-text-dark hover:text-white transition-all duration-300"
               >
                 <ChevronLeft size={20} />
               </button>
               <button
                 onClick={nextMember}
-                className="p-3 border border-gray-300 rounded-full hover:bg-[#1a1a1a] hover:text-white transition-all duration-300"
+                className="p-3 border border-gray-300 rounded-full hover:bg-text-dark hover:text-white transition-all duration-300"
               >
                 <ChevronRight size={20} />
               </button>
@@ -108,8 +108,8 @@ const PhilosophyCarousel = () => {
 
           {/* Right: Content Area */}
           <div className="w-full lg:w-1/2">
-            <div className="relative min-h-[300px] flex flex-col justify-center">
-              <Quote className="text-[#b35a39] opacity-20 w-16 h-16 mb-6" />
+            <div className="relative min-h-75 flex flex-col justify-center">
+              <Quote className="text-primary opacity-20 w-16 h-16 mb-6" />
 
               {team.map((member, index) => (
                 <div
@@ -124,7 +124,7 @@ const PhilosophyCarousel = () => {
                     "{member.philosophy}"
                   </h2>
 
-                  <div className="w-16 h-[2px] bg-[#b35a39] mb-6"></div>
+                  <div className="w-16 h-0.5 bg-primary mb-6"></div>
 
                   <p className="text-gray-600 font-light text-lg leading-relaxed max-w-xl">
                     Leading the firm's vision for {member.role.toLowerCase()},{" "}
@@ -144,7 +144,7 @@ const PhilosophyCarousel = () => {
                     onClick={() => setActiveTab(index)}
                     className={`h-1 transition-all duration-500 ${
                       index === activeTab
-                        ? "w-12 bg-[#b35a39]"
+                        ? "w-12 bg-primary"
                         : "w-4 bg-gray-300"
                     }`}
                   />

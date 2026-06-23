@@ -19,13 +19,13 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="bg-[#F9F8F6] text-[#1a1a1a] py-24 md:py-32 px-4 md:px-16 font-sans"
+      className="bg-[#F9F8F6] text-text-dark py-24 md:py-32 px-4 md:px-16 font-sans"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="flex items-center gap-4 mb-16">
-          <div className="w-12 h-[1px] bg-[#b35a39]"></div>
-          <h3 className="text-sm tracking-[0.3em] text-[#b35a39] font-semibold uppercase">
+          <div className="w-12 h-px bg-primary"></div>
+          <h3 className="text-sm tracking-[0.3em] text-primary font-semibold uppercase">
             Get in Touch
           </h3>
         </div>
@@ -47,9 +47,9 @@ const ContactSection = () => {
                   </p>
                   <a
                     href="mailto:studio@aethel.com"
-                    className="flex items-center gap-4 text-xl md:text-2xl font-light group-hover:text-[#b35a39] transition-colors"
+                    className="flex items-center gap-4 text-xl md:text-2xl font-light group-hover:text-primary transition-colors"
                   >
-                    <Mail className="w-5 h-5 text-[#b35a39]" />
+                    <Mail className="w-5 h-5 text-primary" />
                     studio@aethel.com
                   </a>
                 </div>
@@ -61,9 +61,9 @@ const ContactSection = () => {
                   </p>
                   <a
                     href="tel:+1234567890"
-                    className="flex items-center gap-4 text-xl md:text-2xl font-light group-hover:text-[#b35a39] transition-colors"
+                    className="flex items-center gap-4 text-xl md:text-2xl font-light group-hover:text-primary transition-colors"
                   >
-                    <Phone className="w-5 h-5 text-[#b35a39]" />
+                    <Phone className="w-5 h-5 text-primary" />
                     +1 (234) 567 890
                   </a>
                 </div>
@@ -78,25 +78,16 @@ const ContactSection = () => {
               <div className="flex gap-6">
                 <a
                   href="#"
-                  className="p-4 border border-gray-200 rounded-full hover:bg-[#b35a39] hover:border-[#b35a39] hover:text-white transition-all duration-300"
+                  className="p-4 border border-gray-200 rounded-full hover:bg-primary hover:border-primary hover:text-white transition-all duration-300"
                 >
                   <InstagramIcon />
                 </a>
                 <a
                   href="#"
-                  className="p-4 border border-gray-200 rounded-full hover:bg-[#b35a39] hover:border-[#b35a39] hover:text-white transition-all duration-300"
+                  className="p-4 border border-gray-200 rounded-full hover:bg-primary hover:border-primary hover:text-white transition-all duration-300"
                 >
                   {/* Placeholder for Facebook Icon */}
                   <FacebookIcon />
-                </a>
-                {/* Zalo - Custom Styled Link */}
-                <a
-                  href="#"
-                  className="p-4 border border-gray-200 rounded-full hover:bg-[#b35a39] hover:border-[#b35a39] hover:text-white transition-all duration-300 flex items-center justify-center"
-                >
-                  <span className="font-bold text-[10px] tracking-tighter">
-                    <ZaloIcon />
-                  </span>
                 </a>
               </div>
             </div>
@@ -105,8 +96,8 @@ const ContactSection = () => {
           {/* Right Column: Contact Form */}
           <div className="w-full lg:w-3/5 bg-white p-8 md:p-16 shadow-2xl shadow-gray-200/50 relative overflow-hidden">
             {/* Design element: corner terracotta line */}
-            <div className="absolute top-0 right-0 w-24 h-[2px] bg-[#b35a39]"></div>
-            <div className="absolute top-0 right-0 w-[2px] h-24 bg-[#b35a39]"></div>
+            <div className="absolute top-0 right-0 w-24 h-0.5 bg-primary"></div>
+            <div className="absolute top-0 right-0 w-0.5 h-24 bg-primary"></div>
 
             <form onSubmit={handleSubmit} className="space-y-12">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -115,7 +106,7 @@ const ContactSection = () => {
                   <input
                     type="text"
                     required
-                    className="w-full bg-transparent border-b border-gray-300 py-4 focus:outline-none focus:border-[#b35a39] transition-colors peer placeholder-transparent"
+                    className="w-full bg-transparent border-b border-gray-300 py-4 focus:outline-none focus:border-primary transition-colors peer placeholder-transparent"
                     placeholder="Full Name"
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
@@ -131,7 +122,7 @@ const ContactSection = () => {
                   <input
                     type="email"
                     required
-                    className="w-full bg-transparent border-b border-gray-300 py-4 focus:outline-none focus:border-[#b35a39] transition-colors peer placeholder-transparent"
+                    className="w-full bg-transparent border-b border-gray-300 py-4 focus:outline-none focus:border-primary transition-colors peer placeholder-transparent"
                     placeholder="Email Address"
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
@@ -146,7 +137,7 @@ const ContactSection = () => {
               {/* Project Type Dropdown */}
               <div className="relative">
                 <select
-                  className="w-full bg-transparent border-b border-gray-300 py-4 focus:outline-none focus:border-[#b35a39] transition-colors appearance-none cursor-pointer"
+                  className="w-full bg-transparent border-b border-gray-300 py-4 focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer"
                   onChange={(e) =>
                     setFormData({ ...formData, projectType: e.target.value })
                   }
@@ -165,7 +156,7 @@ const ContactSection = () => {
               <div className="relative">
                 <textarea
                   rows="4"
-                  className="w-full bg-transparent border-b border-gray-300 py-4 focus:outline-none focus:border-[#b35a39] transition-colors peer placeholder-transparent resize-none"
+                  className="w-full bg-transparent border-b border-gray-300 py-4 focus:outline-none focus:border-primary transition-colors peer placeholder-transparent resize-none"
                   placeholder="Additional Message"
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
@@ -178,7 +169,7 @@ const ContactSection = () => {
 
               <button
                 type="submit"
-                className="w-full md:w-auto bg-[#b35a39] text-white px-12 py-5 text-sm font-semibold tracking-widest uppercase flex items-center justify-center gap-3 hover:bg-[#9a4d31] transition-all duration-300 group"
+                className="w-full md:w-auto bg-primary text-white px-12 py-5 text-sm font-semibold tracking-widest uppercase flex items-center justify-center gap-3 hover:bg-primary-hover transition-all duration-300 group"
               >
                 Send Message
                 <Send className="w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

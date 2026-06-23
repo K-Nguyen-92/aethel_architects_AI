@@ -68,12 +68,12 @@ const PortfolioSection = () => {
   return (
     <section
       id="portfolio"
-      className="bg-[#0a0a0a] text-white py-24 px-4 md:px-16 font-sans relative"
+      className="bg-bg-dark text-white py-24 px-4 md:px-16 font-sans relative"
     >
       {/* Section Header */}
       <div className="max-w-7xl mx-auto mb-16 flex flex-col md:flex-row justify-between items-end gap-6">
         <div>
-          <h3 className="text-sm tracking-[0.3em] text-[#b35a39] font-semibold mb-3 uppercase">
+          <h3 className="text-sm tracking-[0.3em] text-primary font-semibold mb-3 uppercase">
             Selected Works
           </h3>
           <h2 className="text-4xl md:text-5xl font-light tracking-wide">
@@ -108,13 +108,13 @@ const PortfolioSection = () => {
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {projects.map((project) => (
-            <div key={project.id} className="w-full flex-shrink-0 relative">
+            <div key={project.id} className="w-full shrink-0 relative">
               <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover brightness-75 transition-all duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent" />
             </div>
           ))}
         </div>
@@ -135,7 +135,7 @@ const PortfolioSection = () => {
 
           <button
             onClick={() => setIsModalOpen(true)}
-            className="flex-shrink-0 bg-transparent border border-white hover:bg-white hover:text-black text-white px-8 py-3 text-sm font-medium tracking-wider uppercase transition-colors duration-300 cursor-pointer"
+            className="shrink-0 bg-transparent border border-white hover:bg-white hover:text-black text-white px-8 py-3 text-sm font-medium tracking-wider uppercase transition-colors duration-300 cursor-pointer"
           >
             View Project
           </button>
@@ -147,7 +147,7 @@ const PortfolioSection = () => {
             <div
               key={index}
               className={`h-1 transition-all duration-500 ${
-                index === currentIndex ? "w-8 bg-[#b35a39]" : "w-4 bg-white/50"
+                index === currentIndex ? "w-8 bg-primary" : "w-4 bg-white/50"
               }`}
             />
           ))}

@@ -44,15 +44,15 @@ const ServicesSection = () => {
   return (
     <section
       id="services"
-      className="bg-[#0a0a0a] text-white py-24 md:py-32 px-4 md:px-16 font-sans"
+      className="bg-bg-dark text-white py-24 md:py-32 px-4 md:px-16 font-sans"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
           <div className="max-w-2xl">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-[1px] bg-[#b35a39]"></div>
-              <h3 className="text-sm tracking-[0.3em] text-[#b35a39] font-semibold uppercase">
+              <div className="w-12 h-px bg-primary"></div>
+              <h3 className="text-sm tracking-[0.3em] text-primary font-semibold uppercase">
                 Our Expertise
               </h3>
             </div>
@@ -72,7 +72,7 @@ const ServicesSection = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="group relative bg-[#0a0a0a] overflow-hidden min-h-[450px] md:min-h-[550px] flex flex-col justify-end p-8 md:p-12 transition-all duration-700"
+              className="group relative bg-bg-dark overflow-hidden min-h-112.5 md:min-h-137.5 flex flex-col justify-end p-8 md:p-12 transition-all duration-700"
             >
               {/* Background Image with Hover Scale */}
               <div className="absolute inset-0 z-0 overflow-hidden">
@@ -82,12 +82,12 @@ const ServicesSection = () => {
                   className="w-full h-full object-cover opacity-30 grayscale group-hover:grayscale-0 group-hover:scale-110 group-hover:opacity-50 transition-all duration-1000 ease-out"
                 />
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-bg-dark via-bg-dark/60 to-transparent"></div>
               </div>
 
               {/* Content */}
               <div className="relative z-10">
-                <div className="text-[#b35a39] mb-6 transform group-hover:-translate-y-2 transition-transform duration-500">
+                <div className="text-primary mb-6 transform group-hover:-translate-y-2 transition-transform duration-500">
                   {service.icon}
                 </div>
 
@@ -101,14 +101,14 @@ const ServicesSection = () => {
                 </p>
 
                 <div className="pt-6 border-t border-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                  <button className="text-sm tracking-widest uppercase font-medium hover:text-[#b35a39] transition-colors">
+                  <button className="text-sm tracking-widest uppercase font-medium hover:text-primary transition-colors">
                     Explore Service
                   </button>
                 </div>
               </div>
 
               {/* Decorative Corner Accent */}
-              <div className="absolute top-0 right-0 w-0 h-0 border-t-[40px] border-t-transparent border-r-[40px] border-r-transparent group-hover:border-r-[#b35a39]/20 transition-all duration-500"></div>
+              <div className="absolute top-0 right-0 w-0 h-0 border-t-40 border-t-transparent border-r-40 border-r-transparent group-hover:border-r-primary/20 transition-all duration-500"></div>
             </div>
           ))}
         </div>
