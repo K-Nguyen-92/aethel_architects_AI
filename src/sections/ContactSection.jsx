@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Mail, Phone, Send, MessageCircle } from "lucide-react";
-import { FacebookIcon, InstagramIcon, ZaloIcon } from "../components/Button";
+import { Mail, Phone, Send, MapPin } from "lucide-react";
+import { FacebookIcon, InstagramIcon } from "../components/Button";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -162,14 +162,14 @@ const ContactSection = () => {
                     setFormData({ ...formData, message: e.target.value })
                   }
                 ></textarea>
-                <label className="absolute left-0 -top-3 text-xs tracking-widest text-gray-400 uppercase transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:-top-3 peer-focus:text-xs peer-focus:text-[#b35a39]">
+                <label className="absolute left-0 -top-3 text-xs tracking-widest text-gray-400 uppercase transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:-top-3 peer-focus:text-xs peer-focus:text-primary">
                   Tell us about your vision
                 </label>
               </div>
 
               <button
                 type="submit"
-                className="w-full md:w-auto bg-primary text-white px-12 py-5 text-sm font-semibold tracking-widest uppercase flex items-center justify-center gap-3 hover:bg-primary-hover transition-all duration-300 group"
+                className="w-full md:w-auto bg-primary text-white px-12 py-5 text-sm font-semibold tracking-widest uppercase flex items-center justify-center gap-3 hover:bg-primary-hover transition-all duration-300 group cursor-pointer"
               >
                 Send Message
                 <Send className="w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

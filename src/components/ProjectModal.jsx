@@ -90,14 +90,14 @@ const ProjectModal = ({
               <div className="absolute inset-x-4 top-1/2 -translate-y-1/2 flex justify-between pointer-events-none">
                 <button
                   onClick={prevImage}
-                  className="p-2 bg-black/70 hover:bg-white hover:text-black text-white rounded-full transition-colors pointer-events-auto border border-white/10"
+                  className="p-2 bg-black/70 hover:bg-white hover:text-black text-white rounded-full transition-colors pointer-events-auto border border-white/10 cursor-pointer"
                   aria-label="Previous image"
                 >
                   <ChevronLeft className="w-5 h-5" />
                 </button>
                 <button
                   onClick={nextImage}
-                  className="p-2 bg-black/70 hover:bg-white hover:text-black text-white rounded-full transition-colors pointer-events-auto border border-white/10"
+                  className="p-2 bg-black/70 hover:bg-white hover:text-black text-white rounded-full transition-colors pointer-events-auto border border-white/10 cursor-pointer"
                   aria-label="Next image"
                 >
                   <ChevronRight className="w-5 h-5" />
@@ -153,14 +153,14 @@ const ProjectModal = ({
                     className="p-1 hover:text-white transition-colors"
                     aria-label="Previous project"
                   >
-                    <ChevronLeft className="w-4 h-4" />
+                    <ChevronLeft className="w-4 h-4 cursor-pointer" />
                   </button>
                   <button
                     onClick={onNextProject}
                     className="p-1 hover:text-white transition-colors"
                     aria-label="Next project"
                   >
-                    <ChevronRight className="w-4 h-4" />
+                    <ChevronRight className="w-4 h-4 cursor-pointer" />
                   </button>
                 </div>
               </div>

@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "../layout/Navbar";
+import ConsultationModal from "../components/ConsultationModal";
 
 const ArchitectLanding = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div
       className="relative min-h-screen bg-cover bg-center bg-no-repeat flex flex-col font-sans"
@@ -22,14 +24,20 @@ const ArchitectLanding = () => {
           BUILD YOUR LEGACY IN SPACE
         </h2>
 
-        <p className="text-lg md:text-2xl text-gray-100 mb-10 font-light drop-shadow-md">
+        <p className="text-lg md:text-2xl text-gray-100 mb-10 font-light drop-shadow-md">mk
           Bespoke, sustainable architectural design for generations.
         </p>
 
-        <button className="btn-primary text-white px-10 py-4 text-sm font-semibold tracking-wider uppercase transition-colors duration-300 shadow-lg cursor-pointer">
+        <button
+            onClick={() => setIsModalOpen(true)}
+            className="btn-primary text-white px-10 py-4 text-sm font-semibold tracking-wider uppercase transition-colors duration-300 shadow-lg cursor-pointer">
           Request a Consultation
         </button>
       </main>
+      <ConsultationModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+      />
     </div>
   );
 };

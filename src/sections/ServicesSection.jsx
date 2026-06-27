@@ -36,7 +36,7 @@ const services = [
     description:
       "Utilizing advanced BIM modeling to achieve Net Zero energy goals, Passive House certification, and long-term ecological resilience.",
     image:
-      "https://images.unsplash.com/photo-1518005020410-d00938f328f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=1200&q=80",
   },
 ];
 
@@ -101,7 +101,7 @@ const ServicesSection = () => {
                 </p>
 
                 <div className="pt-6 border-t border-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-                  <button className="text-sm tracking-widest uppercase font-medium hover:text-primary transition-colors">
+                  <button className="text-sm tracking-widest uppercase font-medium hover:text-primary transition-colors cursor-pointer">
                     Explore Service
                   </button>
                 </div>
@@ -118,7 +118,7 @@ const ServicesSection = () => {
           <p className="text-gray-500 text-sm tracking-widest uppercase mb-8">
             Ready to bring your vision to life?
           </p>
-          <button className="bg-transparent border border-white hover:bg-white hover:text-black text-white px-12 py-5 text-sm font-semibold tracking-widest uppercase transition-all duration-500">
+          <button className="bg-transparent border border-white hover:bg-white hover:text-black text-white px-12 py-5 text-sm font-semibold tracking-widest uppercase transition-all duration-500 cursor-pointer">
             Start a Consultation
           </button>
         </div>

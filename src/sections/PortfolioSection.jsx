@@ -85,14 +85,14 @@ const PortfolioSection = () => {
         <div className="flex gap-4">
           <button
             onClick={prevProject}
-            className="p-3 border border-gray-700 rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+            className="p-3 border border-gray-700 rounded-full hover:bg-white hover:text-black transition-colors duration-300 cursor-pointer"
             aria-label="Previous Project"
           >
             <ChevronLeft className="w-6 h-6" strokeWidth={1.5} />
           </button>
           <button
             onClick={nextProject}
-            className="p-3 border border-gray-700 rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+            className="p-3 border border-gray-700 rounded-full hover:bg-white hover:text-black transition-colors duration-300 cursor-pointer"
             aria-label="Next Project"
           >
             <ChevronRight className="w-6 h-6" strokeWidth={1.5} />

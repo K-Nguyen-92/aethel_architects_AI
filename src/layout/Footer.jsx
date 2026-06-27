@@ -56,7 +56,7 @@ const Footer = () => {
                 />
                 <button
                   type="submit"
-                  className="absolute right-0 bottom-3 text-gray-500 group-hover:text-primary transition-colors"
+                  className="absolute right-0 bottom-3 text-gray-500 group-hover:text-primary transition-colors cursor-pointer"
                   aria-label="Subscribe"
                 >
                   <ArrowRight className="w-5 h-5" />
@@ -188,7 +188,7 @@ const Footer = () => {
 
           <button
             onClick={scrollToTop}
-            className="group flex items-center gap-3 text-xs tracking-[0.2em] text-gray-500 uppercase hover:text-white transition-colors"
+            className="group flex items-center gap-3 text-xs tracking-[0.2em] text-gray-500 uppercase hover:text-white transition-colors cursor-pointer"
           >
             <span>Back to Top</span>
             <div className="p-2 border border-gray-800 rounded-full group-hover:border-white transition-colors">

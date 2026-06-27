@@ -140,3 +140,7 @@
         -webkit-line-clamp: unset;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}

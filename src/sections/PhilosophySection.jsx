@@ -93,13 +93,13 @@ const PhilosophyCarousel = () => {
             <div className="flex gap-4 mt-12 lg:mt-8">
               <button
                 onClick={prevMember}
-                className="p-3 border border-gray-300 rounded-full hover:bg-text-dark hover:text-white transition-all duration-300"
+                className="p-3 border border-gray-300 rounded-full hover:bg-text-dark hover:text-white transition-all duration-300 cursor-pointer"
               >
                 <ChevronLeft size={20} />
               </button>
               <button
                 onClick={nextMember}
-                className="p-3 border border-gray-300 rounded-full hover:bg-text-dark hover:text-white transition-all duration-300"
+                className="p-3 border border-gray-300 rounded-full hover:bg-text-dark hover:text-white transition-all duration-300 cursor-pointer"
               >
                 <ChevronRight size={20} />
               </button>
@@ -142,7 +142,7 @@ const PhilosophyCarousel = () => {
                   <button
                     key={index}
                     onClick={() => setActiveTab(index)}
-                    className={`h-1 transition-all duration-500 ${
+                    className={`cursor-pointer h-1 transition-all duration-500 ${
                       index === activeTab
                         ? "w-12 bg-primary"
                         : "w-4 bg-gray-300"
